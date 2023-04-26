@@ -1,5 +1,6 @@
+import { Container } from './style';
 const App = () => {
- return <div>Hello</div>;
+ return <Container>Hello</Container>;
 };
 
 export default App;
