@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { Container, Button, Logo } from 'components/ui';
 import Navigation from '../Navigation';
 import { StyledHeader, StyledNav } from './styles';
-// type Props = {}
 
 const Header = () => {
  const [active, setActive] = useState(false);
