@@ -11,24 +11,27 @@ export const StyledHeader = styled.header<HeaderProps>`
  z-index: 100;
  transition: all ${({ theme }) => theme.cubic};
  background: transparent;
- padding: 14px 0;
- height: 120px;
+ padding: 22px 0;
 
  &.active {
-  background: ${({ theme }) => theme.colors.bgAccent};
+  background: ${({ theme }) => theme.colors.text};
  }
  @media ${({ theme }) => theme.device.tablet} {
-  padding: 14px 0;
-  height: 82px;
+  padding: 23px 0;
  }
- @media ${({ theme }) => theme.device.dekstop} {
-  height: 70px;
+ @media ${({ theme }) => theme.device.desktop} {
+  padding: 32px 0;
  }
 `;
 
 export const StyledNav = styled.nav`
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+ align-items: center;
+
  @media ${({ theme }) => theme.device.tablet} {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
  }

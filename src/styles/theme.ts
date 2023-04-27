@@ -2,7 +2,9 @@ export type ThemeType = typeof theme;
 
 const size = {
  mobile: '320px',
+ mobileMax: '767px',
  tablet: '768px',
+ tabletMax: '1359px',
  desktop: '1360px',
 };
 
@@ -44,7 +46,9 @@ export const theme = {
  },
  device: {
   mobile: `(min-width: ${size.mobile})`,
+  mobileMax: `(max-width: ${size.mobileMax})`,
   tablet: `(min-width: ${size.tablet})`,
+  tabletMax: `(max-width: ${size.tabletMax})`,
   desktop: `(min-width: ${size.desktop})`,
  },
  shadow: '2px 2px 12px 2px rgba(0, 0, 0, 0.4)',

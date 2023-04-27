@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+
 import { Container, Button, Logo } from 'components/ui';
 import Navigation from '../Navigation';
 import { StyledHeader, StyledNav } from './styles';
@@ -19,7 +20,7 @@ const Header = () => {
  }, []);
 
  return (
-  <StyledHeader className={active ? 'active' : ''} style={{ backgroundColor: 'black' }}>
+  <StyledHeader className={active ? 'active' : ''}>
    <Container>
     <StyledNav>
      <Logo />
