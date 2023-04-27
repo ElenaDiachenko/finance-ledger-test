@@ -1,4 +1,11 @@
 export type ThemeType = typeof theme;
+
+const size = {
+ mobile: '320px',
+ tablet: '768px',
+ desktop: '1360px',
+};
+
 export const theme = {
  colors: {
   white: '#fff',
@@ -33,6 +40,11 @@ export const theme = {
  radii: {
   none: '0',
   sm: '5px',
+ },
+ device: {
+  mobile: `(min-width: ${size.mobile})`,
+  tablet: `(min-width: ${size.tablet})`,
+  desktop: `(min-width: ${size.desktop})`,
  },
  shadow: '2px 2px 12px 2px rgba(0, 0, 0, 0.4)',
  gradient: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))',
