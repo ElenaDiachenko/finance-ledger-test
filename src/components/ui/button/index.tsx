@@ -2,15 +2,15 @@ import { FC, ReactNode } from 'react';
 import { StyledButton } from './style';
 
 type Props = {
- type: 'button' | 'submit';
  children: ReactNode;
  variant?: string;
  className: string;
+ to: string;
 };
 
-const Button: FC<Props> = ({ type, children, className, variant }) => {
+const Button: FC<Props> = ({ children, className, variant, to }) => {
  return (
-  <StyledButton type={type} className={className} variant={variant}>
+  <StyledButton to={to} smooth={true} className={className} variant={variant}>
    {children}
   </StyledButton>
  );

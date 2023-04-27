@@ -63,6 +63,7 @@ button,
 textarea,
 select {
   font: inherit;
+  outline:transparent;
 }
 
 button,
