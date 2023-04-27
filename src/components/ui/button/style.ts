@@ -12,7 +12,7 @@ export const StyledButton = styled.button<ButtonProps>`
  border: ${({ theme }) => theme.borders.normal};
  border-radius: ${({ theme }) => theme.radii.sm};
 
- transition: background-color ${({ theme }) => theme.cubic};
+ transition: all ${({ theme }) => theme.cubic};
  &.primary {
   color: ${({ theme }) => theme.colors.white};
   background: ${({ theme }) => theme.colors.accent};

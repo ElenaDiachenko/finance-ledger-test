@@ -19,7 +19,9 @@
    "hooks/*": ["hooks/*"],
    "utils/*": ["utils/*"],
    "types/*": ["types/*"],
-   "styles/*": ["styles/*"]
+   "styles/*": ["styles/*"],
+   "assets/*": ["assets/*"],
+   "constants/*": ["constants/*"]
   },
   /* Linting */
   "strict": true,

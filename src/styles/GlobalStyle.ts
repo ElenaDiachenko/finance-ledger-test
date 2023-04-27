@@ -4,26 +4,31 @@ import { ThemeType } from './theme';
 
 export const GlobalStyle = createGlobalStyle<ThemeProps<ThemeType>>`
 ${normalize}
+
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
+  padding: 0;
    background-color: ${({ theme }) => theme.colors.bg};
    color: ${({ theme }) => theme.colors.white};
+   font-family: 'Open Sans', sans-serif;
    font-size:${({ theme }) => theme.fontSizes.xs};
    line-height:${({ theme }) => theme.lineHeights.body};
    font-weight:${({ theme }) => theme.fontWeights.normal};
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
+ 
+
    @media ${({ theme }) => theme.device.tablet} {
   font-size:${({ theme }) => theme.fontSizes.s};
  }
 }
 
 #root {
-  margin:0;
+ min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  
 }
 a {
   text-decoration: none;
@@ -48,15 +53,18 @@ h3,
 h4,
 h5,
 h6,
-p,button,
-input
+p
  {
   padding: 0;
   margin: 0;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
 }
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 button,
 label, 
 a {
