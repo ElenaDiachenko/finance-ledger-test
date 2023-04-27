@@ -1,6 +1,13 @@
-import { Container } from './style';
+import Button from 'components/ui/button';
+
 const App = () => {
- return <Container>Hello</Container>;
+ return (
+  <>
+   <Button type="button" className="primary">
+    Hello World
+   </Button>
+  </>
+ );
 };
 
 export default App;

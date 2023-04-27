@@ -11,11 +11,15 @@ body {
   margin: 0;
    background-color: ${({ theme }) => theme.colors.bg};
    color: ${({ theme }) => theme.colors.white};
-   font-size:${({ theme }) => theme.fontSizes.s};
+   font-size:${({ theme }) => theme.fontSizes.xs};
    line-height:${({ theme }) => theme.lineHeights.body};
    font-weight:${({ theme }) => theme.fontWeights.normal};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+   @media ${({ theme }) => theme.device.tablet} {
+  font-size:${({ theme }) => theme.fontSizes.s};
+ }
 }
 
 #root {

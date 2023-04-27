@@ -13,12 +13,13 @@ export const theme = {
   secondary: '#e9e9e9',
   placeholder: ' #808080',
   accent: '#28a745',
+  accentHover: '#2ebf4f',
   bg: '#fff',
   bgSec: '#f4f4f4',
   bgAccent: '#0284d0',
  },
  fontSizes: {
-  xs: '12px',
+  xs: '16px',
   s: '18px',
   m: '20px',
   l: '35px',
@@ -48,5 +49,5 @@ export const theme = {
  },
  shadow: '2px 2px 12px 2px rgba(0, 0, 0, 0.4)',
  gradient: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))',
- cubic: 'all 250ms cubic-bezier(0.4, 0, 0.2, 1);',
+ cubic: '250ms cubic-bezier(0.4, 0, 0.2, 1);',
 };
