@@ -23,6 +23,7 @@ import webp6 from 'assets/images/cases/cases4.webp';
 import img2x6 from 'assets/images/cases/cases4@2x.jpg';
 import webp2x6 from 'assets/images/cases/cases4@2x.webp';
 
+console.log(img1);
 export const images = [
  {
   id: 1,
@@ -73,5 +74,16 @@ export const images = [
   description: 'Skyscrapers',
  },
 ];
+
+export const slides = images.map((image) => {
+ return {
+  src: image.img,
+  description: image.description,
+  srcSet: [
+   { src: image.img2x, width: 1280, height: 854, type: 'image/jpeg' },
+   { src: image.webp2x, width: 1280, height: 854, type: 'image/webp' },
+  ],
+ };
+});
 
 export type ImageType = (typeof images)[number];

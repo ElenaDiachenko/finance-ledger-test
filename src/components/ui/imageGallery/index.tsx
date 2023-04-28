@@ -5,24 +5,25 @@ import { StyledGallery } from './styles';
 
 type GaleryProps = {
  images: ImageType[];
+ handleLitebox: (idx: number) => void;
 };
 
-const ImageGallery: FC<GaleryProps> = ({ images }) => {
+const ImageGallery: FC<GaleryProps> = ({ images, handleLitebox }) => {
  return (
-  <div className="">
-   <StyledGallery>
-    {images.map((image) => (
-     <ResponsiveImage
-      key={image.id}
-      img={image.img}
-      img2x={image.img2x}
-      webp={image.webp}
-      webp2x={image.webp2x}
-      alt={image.description}
-     />
-    ))}
-   </StyledGallery>
-  </div>
+  <StyledGallery>
+   {images.map((image, idx) => (
+    <ResponsiveImage
+     key={image.id}
+     img={image.img}
+     img2x={image.img2x}
+     webp={image.webp}
+     webp2x={image.webp2x}
+     alt={image.description}
+     idx={idx}
+     handleLitebox={handleLitebox}
+    />
+   ))}
+  </StyledGallery>
  );
 };
 
