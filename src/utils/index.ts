@@ -1,3 +1,4 @@
 import { constants } from './constants';
+import { images } from './galeryImages';
 
-export { constants };
+export { constants, images };

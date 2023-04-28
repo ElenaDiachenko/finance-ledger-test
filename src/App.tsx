@@ -7,8 +7,8 @@ const App = () => {
    <main>
     <Hero />
     <About />
-    <Blog />
     <Cases />
+    <Blog />
    </main>
   </>
  );

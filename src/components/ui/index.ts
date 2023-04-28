@@ -4,5 +4,6 @@ import Logo from './logo';
 import ResponsiveImage from './responsiveImage';
 import FullSizeSection from './fullSizeSection';
 import SectionTitle from './sectionTitle';
+import ImageGallery from './imageGallery';
 
-export { Button, Container, Logo, ResponsiveImage, FullSizeSection, SectionTitle };
+export { Button, Container, Logo, ResponsiveImage, FullSizeSection, SectionTitle, ImageGallery };
