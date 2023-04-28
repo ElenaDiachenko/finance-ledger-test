@@ -9,6 +9,7 @@ export const StyledButton = styled(Link)<ButtonProps>`
  display: flex;
  justify-content: center;
  align-items: center;
+ width: max-content;
  gap: 8px;
  padding: 16px 32px;
  border: ${({ theme }) => theme.borders.normal};
