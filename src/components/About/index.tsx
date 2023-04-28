@@ -1,9 +1,9 @@
 import { ResponsiveImage, FullSizeSection, SectionTitle, Button } from 'components/ui';
+import { ContentBox, Desc, SubTitle } from './styles';
 import img from 'assets/images/home/people.jpg';
 import webp from 'assets/images/home/people.webp';
 import img2x from 'assets/images/home/people@2x.jpg';
 import webp2x from 'assets/images/home/people@2x.webp';
-import { ContentBox, Desc, SubTitle } from './styles';
 
 const About = () => {
  return (

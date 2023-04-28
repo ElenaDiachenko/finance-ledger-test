@@ -20,7 +20,13 @@ const Blog = () => {
      Read Our Blog
     </Button>
    </ContentBox>
-   <ResponsiveImage img={img} img2x={img2x} webp={webp} webp2x={webp2x} alt={'a group of blog'} />
+   <ResponsiveImage
+    img={img}
+    img2x={img2x}
+    webp={webp}
+    webp2x={webp2x}
+    alt={'office supplies on the table'}
+   />
   </FullSizeSection>
  );
 };

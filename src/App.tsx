@@ -1,6 +1,4 @@
-import Button from 'components/ui/button';
-import Container from 'components/ui/container';
-import { About, Header, Hero, Blog } from './components';
+import { About, Header, Hero, Blog, Cases } from './components';
 
 const App = () => {
  return (
@@ -10,6 +8,7 @@ const App = () => {
     <Hero />
     <About />
     <Blog />
+    <Cases />
    </main>
   </>
  );
