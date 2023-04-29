@@ -23,7 +23,6 @@ import webp6 from 'assets/images/cases/cases4.webp';
 import img2x6 from 'assets/images/cases/cases4@2x.jpg';
 import webp2x6 from 'assets/images/cases/cases4@2x.webp';
 
-console.log(img1);
 export const images = [
  {
   id: 1,
