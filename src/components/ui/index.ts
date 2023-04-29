@@ -5,5 +5,15 @@ import ResponsiveImage from './responsiveImage';
 import FullSizeSection from './fullSizeSection';
 import SectionTitle from './sectionTitle';
 import ImageGallery from './imageGallery';
+import SectionWithContainer from './sectionWithContainer';
 
-export { Button, Container, Logo, ResponsiveImage, FullSizeSection, SectionTitle, ImageGallery };
+export {
+ Button,
+ Container,
+ Logo,
+ ResponsiveImage,
+ FullSizeSection,
+ SectionTitle,
+ ImageGallery,
+ SectionWithContainer,
+};

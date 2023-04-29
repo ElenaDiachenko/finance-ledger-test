@@ -4,8 +4,8 @@ import Captions from 'yet-another-react-lightbox/plugins/captions';
 
 import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/captions.css';
-import { Container, SectionTitle, ImageGallery } from 'components/ui';
-import { ContentBox, Desc, Section, SubTitle, StyledPrev, StyledNext } from './styles';
+import { Container, SectionTitle, ImageGallery, SectionWithContainer } from 'components/ui';
+import { ContentBox, Desc, SubTitle, StyledPrev, StyledNext } from './styles';
 import { images, slides } from 'utils';
 import next from 'assets/images/gallery/next.png';
 import prev from 'assets/images/gallery/prev.png';
@@ -37,7 +37,7 @@ const Cases = () => {
  };
 
  return (
-  <Section>
+  <SectionWithContainer id={'cases'}>
    <Container>
     <ContentBox>
      <SubTitle>This is what we do</SubTitle>
@@ -64,7 +64,6 @@ const Cases = () => {
        backgroundColor: 'rgba(0, 0, 0, .7)',
       },
       captionsDescriptionContainer: { backgroundColor: 'rgba(0, 0, 0, .7' },
-      //   button: { paddingLeft: 200, paddingRight: 200 },
      }}
      render={{
       iconPrev: prevIcon,
@@ -74,7 +73,7 @@ const Cases = () => {
      }}
     />
    </Container>
-  </Section>
+  </SectionWithContainer>
  );
 };
 

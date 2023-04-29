@@ -80,6 +80,7 @@ export const slides = images.map((image) => {
   src: image.img,
   description: image.description,
   alt: image.description,
+
   srcSet: [
    { src: image.img, width: 640, height: 427, type: 'image/jpeg' },
    { src: image.webp, width: 640, height: 427, type: 'image/webp' },
