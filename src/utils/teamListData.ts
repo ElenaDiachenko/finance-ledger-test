@@ -11,7 +11,7 @@ import webp3 from 'assets/images/team/person3.webp';
 import img2x3 from 'assets/images/team/person3@2x.jpg';
 import webp2x3 from 'assets/images/team/person3@2x.webp';
 
-export const teamList = [
+export const teamListData = [
  {
   title: 'John Doe',
   desc: 'President',
@@ -19,7 +19,7 @@ export const teamList = [
   webp: webp1,
   img2x: img2x1,
   webp2x: webp2x1,
-  tags: 'photo',
+  alt: 'photo',
  },
  {
   title: 'Jane Doe',
@@ -28,7 +28,7 @@ export const teamList = [
   webp: webp2,
   img2x: img2x2,
   webp2x: webp2x2,
-  tags: 'photo',
+  alt: 'photo',
  },
  {
   title: 'Steve Smith',
@@ -37,8 +37,8 @@ export const teamList = [
   webp: webp3,
   img2x: img2x3,
   webp2x: webp2x3,
-  tags: 'photo',
+  alt: 'photo',
  },
 ];
 
-export type TeamItemType = (typeof teamList)[number];
+export type TeamItemType = (typeof teamListData)[number];

@@ -6,6 +6,7 @@ import Logo from './logo';
 import ResponsiveImage from './responsiveImage';
 import SectionTitle from './sectionTitle';
 import ImageGallery from './imageGallery';
+import TeamList from './teamList';
 
 export {
  Button,
@@ -16,4 +17,5 @@ export {
  SectionTitle,
  ImageGallery,
  SectionWithContainer,
+ TeamList,
 };
