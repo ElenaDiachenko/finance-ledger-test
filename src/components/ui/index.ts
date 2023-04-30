@@ -7,6 +7,7 @@ import ResponsiveImage from './responsiveImage';
 import SectionTitle from './sectionTitle';
 import ImageGallery from './imageGallery';
 import TeamList from './teamList';
+import SocialBtnList from './socialBtnList';
 
 export {
  Button,
@@ -18,4 +19,5 @@ export {
  ImageGallery,
  SectionWithContainer,
  TeamList,
+ SocialBtnList,
 };
