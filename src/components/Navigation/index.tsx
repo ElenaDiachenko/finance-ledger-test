@@ -1,6 +1,5 @@
-import { Link } from 'react-scroll';
 import { constants } from 'utils';
-import { StyledMenu } from './styles';
+import { StyledMenu, MenuLink } from './styles';
 
 const Navigation = () => {
  return (
@@ -8,9 +7,9 @@ const Navigation = () => {
    {constants.navLinks.map((item) => {
     return (
      <li key={item.path}>
-      <Link to={item.path} smooth={true}>
+      <MenuLink to={item.path} smooth={true}>
        {item.title}
-      </Link>
+      </MenuLink>
      </li>
     );
    })}

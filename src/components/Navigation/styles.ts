@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 export const StyledMenu = styled.ul`
  display: flex;
@@ -18,6 +19,24 @@ export const StyledMenu = styled.ul`
 
   @media ${({ theme }) => theme.device.tablet} {
    font-size: ${({ theme }) => theme.fontSizes.s};
+  }
+ }
+`;
+
+export const MenuLink = styled(Link)`
+ position: relative;
+ :hover,
+ :focus-visible {
+  outline: none;
+
+  ::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   width: 100%;
+   height: 2px;
+   background: ${({ theme }) => theme.colors.accent};
   }
  }
 `;

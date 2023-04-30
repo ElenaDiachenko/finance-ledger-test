@@ -6,5 +6,6 @@ import Cases from './Cases';
 import Team from './Team';
 import Contact from './Contact';
 import Form from './Form';
+import Footer from './Footer';
 
-export { Header, Hero, About, Blog, Cases, Team, Contact, Form };
+export { Header, Hero, About, Blog, Cases, Team, Contact, Form, Footer };
