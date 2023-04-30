@@ -1,12 +1,11 @@
 import sprite from 'assets/images/sprite.svg';
-import { LogoBox, Span, Icon } from './styles';
+import { LogoBox, Span } from './styles';
+import { Icon } from 'components/ui';
 
 const Logo = () => {
  return (
   <LogoBox to={'home'} smooth={true}>
-   <Icon width="40" height="35">
-    <use href={`${sprite}#logo`} />
-   </Icon>
+   <Icon name={'logo'} width={40} height={35} />
    <span>
     Finance
     <Span> Ledger</Span>

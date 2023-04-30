@@ -1,21 +1,26 @@
-import 'yet-another-react-lightbox/styles.css';
-import 'yet-another-react-lightbox/plugins/captions.css';
-import { Container, SectionTitle, SectionWithContainer, TeamList } from 'components/ui';
-import { ContentBox, Desc, SubTitle } from './styles';
-import { teamListData } from 'utils';
+import { ResponsiveImage, FullSizeSection, SectionTitle } from 'components/ui';
+import Form from '../Form';
+import img from 'assets/images/home/contact.jpg';
+import webp from 'assets/images/home/contact.webp';
+import img2x from 'assets/images/home/contact@2x.jpg';
+import webp2x from 'assets/images/home/contact@2x.webp';
+import { ContentBox } from './styles';
 
 const Contact = () => {
  return (
-  <SectionWithContainer id={'contact'}>
-   <Container>
-    <ContentBox>
-     <SubTitle>Who we are</SubTitle>
-     <SectionTitle>Our Professional Team</SectionTitle>
-     <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</Desc>
-    </ContentBox>
-    <TeamList items={teamListData} />
-   </Container>
-  </SectionWithContainer>
+  <FullSizeSection id="contact" bg="bgSec">
+   <ResponsiveImage
+    img={img}
+    img2x={img2x}
+    webp={webp}
+    webp2x={webp2x}
+    alt={'office supplies on the table'}
+   />
+   <ContentBox>
+    <SectionTitle>Request Callback</SectionTitle>
+    <Form />
+   </ContentBox>
+  </FullSizeSection>
  );
 };
 

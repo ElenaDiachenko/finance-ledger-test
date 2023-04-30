@@ -54,7 +54,3 @@ export const Desc = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.xl};
  }
 `;
-
-export const Icon = styled.svg`
- fill: currentColor;
-`;

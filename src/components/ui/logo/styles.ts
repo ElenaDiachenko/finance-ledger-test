@@ -20,9 +20,6 @@ export const LogoBox = styled(Link)`
   transform: scale(1.03);
  }
 `;
-export const Icon = styled.svg`
- fill: currentColor;
-`;
 
 export const Span = styled.span`
  color: ${({ theme }) => theme.colors.white};

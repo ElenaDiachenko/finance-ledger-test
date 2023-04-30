@@ -8,6 +8,7 @@ import SectionTitle from './sectionTitle';
 import ImageGallery from './imageGallery';
 import TeamList from './teamList';
 import SocialBtnList from './socialBtnList';
+import Icon from './icon';
 
 export {
  Button,
@@ -20,4 +21,5 @@ export {
  SectionWithContainer,
  TeamList,
  SocialBtnList,
+ Icon,
 };

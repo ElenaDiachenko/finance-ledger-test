@@ -19,6 +19,7 @@ export const theme = {
   bg: '#fff',
   bgSec: '#f4f4f4',
   bgAccent: '#0284d0',
+  input: '#f5f5f5',
  },
  fontSizes: {
   xs: '16px',

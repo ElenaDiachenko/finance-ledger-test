@@ -1,8 +1,23 @@
 import styled from 'styled-components';
 
+export const Section = styled.section`
+ margin: 0 auto;
+ @media ${({ theme }) => theme.device.tablet} {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+`;
+
 export const ContentBox = styled.div`
- text-align: center;
- margin-bottom: 30px;
+ color: ${({ theme }) => theme.colors.text};
+ padding: 51px 20px 25px;
+
+ @media ${({ theme }) => theme.device.tablet} {
+  padding: 32px;
+ }
+ @media ${({ theme }) => theme.device.desktop} {
+  padding: 56px 20px 77px 28px;
+ }
 `;
 
 export const SubTitle = styled.p`
@@ -11,21 +26,5 @@ export const SubTitle = styled.p`
 
 export const Desc = styled.p`
  margin-top: 24px;
-`;
-
-export const NavigateButton = styled.div`
- opacity: 0;
- &:hover {
-  opacity: 1;
-  padding-top: calc(100vh / 6);
-  padding-bottom: calc(100vh / 6);
- }
-`;
-
-export const StyledNext = styled(NavigateButton)`
- padding-left: calc(100vw / 4);
-`;
-
-export const StyledPrev = styled(NavigateButton)`
- padding-right: calc(100vw / 4);
+ margin-bottom: 24px;
 `;
