@@ -1,4 +1,4 @@
-import { ResponsiveImage, FullSizeSection, SectionTitle, Button } from 'components/ui';
+import { ResponsiveImage, FullSizeSection, SectionTitle, ButtonLink } from 'components/ui';
 import { ContentBox, Desc, SubTitle } from './styles';
 import img from 'assets/images/home/people.jpg';
 import webp from 'assets/images/home/people.webp';
@@ -17,9 +17,9 @@ const About = () => {
      laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum
      temporibus doloribus iste maiores deleniti?
     </Desc>
-    <Button to="" className="outline">
+    <ButtonLink to="" className="outline">
      Read More
-    </Button>
+    </ButtonLink>
    </ContentBox>
   </FullSizeSection>
  );

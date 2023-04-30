@@ -1,26 +1,22 @@
 import { useForm } from 'react-hook-form';
-import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { Icon } from 'components/ui';
+import { Button, Icon } from 'components/ui';
 import { ErrorWrapper, Input, InputWrapper, Label, Placeholder, Span, StyledForm } from './styles';
+import { validationSchema } from 'utils';
 
 type UserInput = {
  name: string;
  email: string;
 };
 
-const validationSchema = yup.object({
- name: yup.string().required('Name is required'),
- email: yup.string().required('Email is required'),
-});
-
 const Form = () => {
  const {
   register,
   reset,
   handleSubmit,
-  formState: { errors },
+  formState: { errors, isSubmitting },
  } = useForm<UserInput>({ mode: 'onTouched', resolver: yupResolver(validationSchema) });
+
  const handlerSubmit = (credentials: UserInput) => {
   console.table(credentials);
   reset();
@@ -33,7 +29,7 @@ const Form = () => {
      <Placeholder className="placeholder">Enter your name</Placeholder>
      {errors?.name && (
       <ErrorWrapper>
-       <Icon name="error" width={14} height={14} />
+       <Icon name="error" width={16} height={16} />
        <Span>{errors?.name?.message || 'Error!'}</Span>
       </ErrorWrapper>
      )}
@@ -43,14 +39,15 @@ const Form = () => {
      <Placeholder className="placeholder">Enter email*</Placeholder>
      {errors?.email && (
       <ErrorWrapper>
-       <Icon name="error" width={14} height={14} />
+       <Icon name="error" width={16} height={16} />
        <Span>{errors?.email?.message || 'Error!'}</Span>
       </ErrorWrapper>
      )}
     </Label>
    </InputWrapper>
-   <button type="submit">Send</button>
-   {/* <ButtonText type="submit">Send</ButtonText> */}
+   <Button type="submit" disabled={isSubmitting} className="primary">
+    Send
+   </Button>
   </StyledForm>
  );
 };

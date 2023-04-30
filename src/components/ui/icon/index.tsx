@@ -6,11 +6,12 @@ type IconProps = {
  name: string;
  width: number;
  height: number;
+ className?: string;
 };
 
-const Icon: FC<IconProps> = ({ name, width, height }) => {
+const Icon: FC<IconProps> = ({ name, width, height, className }) => {
  return (
-  <StyledIcon width={width} height={height}>
+  <StyledIcon width={width} height={height} className={className}>
    <use href={`${sprite}#${name}`} />
   </StyledIcon>
  );

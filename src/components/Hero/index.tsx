@@ -1,5 +1,5 @@
 import { Section, Title, Desc, ContentBox } from './styles';
-import { Button, Container, Icon } from 'components/ui';
+import { ButtonLink, Container, Icon } from 'components/ui';
 
 const Hero = () => {
  return (
@@ -8,10 +8,10 @@ const Hero = () => {
     <ContentBox>
      <Title>The Sky Is The Limit</Title>
      <Desc>We provide world class financial assistance</Desc>
-     <Button to="about" className={'primary'}>
+     <ButtonLink to="about" className={'primary'}>
       <Icon name="arrow" width={9} height={18} />
       Read more
-     </Button>
+     </ButtonLink>
     </ContentBox>
    </Container>
   </Section>

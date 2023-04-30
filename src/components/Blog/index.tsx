@@ -1,4 +1,4 @@
-import { ResponsiveImage, FullSizeSection, SectionTitle, Button } from 'components/ui';
+import { ResponsiveImage, FullSizeSection, SectionTitle, ButtonLink } from 'components/ui';
 import img from 'assets/images/home/blog.jpg';
 import webp from 'assets/images/home/blog.webp';
 import img2x from 'assets/images/home/blog@2x.jpg';
@@ -16,9 +16,9 @@ const Blog = () => {
      laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum
      temporibus doloribus iste maiores deleniti?
     </Desc>
-    <Button variant="blue" to="" className="outline">
+    <ButtonLink variant="blue" to="" className="outline">
      Read Our Blog
-    </Button>
+    </ButtonLink>
    </ContentBox>
    <ResponsiveImage
     img={img}

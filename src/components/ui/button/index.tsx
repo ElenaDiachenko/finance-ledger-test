@@ -5,12 +5,13 @@ type Props = {
  children: ReactNode;
  variant?: string;
  className: string;
- to: string;
+ type: 'button' | 'submit';
+ disabled: boolean;
 };
 
-const Button: FC<Props> = ({ children, className, variant, to }) => {
+const Button: FC<Props> = ({ children, className, variant, type, disabled = false }) => {
  return (
-  <StyledButton to={to} smooth={true} className={className} variant={variant}>
+  <StyledButton type={type} className={className} variant={variant} disabled={disabled}>
    {children}
   </StyledButton>
  );

@@ -1,18 +1,17 @@
 import styled from 'styled-components';
-
+import { Link } from 'react-scroll';
 type ButtonProps = {
  className: string;
  variant?: string;
- disabled: boolean;
 };
 
-export const StyledButton = styled.button<ButtonProps>`
+export const StyledButton = styled(Link)<ButtonProps>`
  display: flex;
  justify-content: center;
  align-items: center;
  width: max-content;
  gap: 8px;
- padding: 16px 56px;
+ padding: 16px 32px;
  border: ${({ theme }) => theme.borders.normal};
  border-radius: ${({ theme }) => theme.radii.sm};
 

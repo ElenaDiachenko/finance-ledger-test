@@ -1,5 +1,6 @@
 import SectionWithContainer from './sectionWithContainer';
 import FullSizeSection from './fullSizeSection';
+import ButtonLink from './buttonLink';
 import Button from './button';
 import Container from './container';
 import Logo from './logo';
@@ -11,7 +12,7 @@ import SocialBtnList from './socialBtnList';
 import Icon from './icon';
 
 export {
- Button,
+ ButtonLink,
  Container,
  Logo,
  ResponsiveImage,
@@ -22,4 +23,5 @@ export {
  TeamList,
  SocialBtnList,
  Icon,
+ Button,
 };
