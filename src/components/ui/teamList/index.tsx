@@ -22,7 +22,7 @@ const TeamList: FC<ListProps> = ({ items }) => {
        alt={item.alt}
       />
       <Overlay>
-       <SocialBtnList icons={socialIcons} />
+       <SocialBtnList icons={socialIcons} hoverColor={'social'} />
       </Overlay>
      </ImageBox>
      <ContentBox>

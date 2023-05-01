@@ -21,7 +21,8 @@
    "types/*": ["types/*"],
    "styles/*": ["styles/*"],
    "assets/*": ["assets/*"],
-   "constants/*": ["constants/*"]
+   "constants/*": ["constants/*"],
+   "services/*": ["services/*"]
   },
   /* Linting */
   "strict": true,

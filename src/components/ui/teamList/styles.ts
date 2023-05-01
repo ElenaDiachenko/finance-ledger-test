@@ -2,12 +2,11 @@ import styled from 'styled-components';
 
 export const StyledList = styled.ul`
  align-items: center;
- margin-bottom: 30px;
+
  @media ${({ theme }) => theme.device.tablet} {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 18px;
-  margin-bottom: 42px;
  }
 `;
 export const ImageBox = styled.div`
@@ -53,6 +52,7 @@ export const Title = styled.h3`
 `;
 
 export const Description = styled.p`
+ padding-bottom: 16px;
  @media ${({ theme }) => theme.device.tablet} {
   font-size: ${({ theme }) => theme.fontSizes.s};
   line-height: 1;

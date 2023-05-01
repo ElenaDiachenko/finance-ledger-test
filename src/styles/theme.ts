@@ -20,6 +20,8 @@ export const theme = {
   bgSec: '#f4f4f4',
   bgAccent: '#0284d0',
   input: '#f5f5f5',
+  footer: 'rgba(51,51,51, .8)',
+  social: 'rgba(225,225,225, .8)',
  },
  fontSizes: {
   xs: '16px',

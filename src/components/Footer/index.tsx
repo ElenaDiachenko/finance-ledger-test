@@ -7,7 +7,7 @@ const Footer = () => {
  return (
   <StyledFooter>
    <Container>
-    <SocialBtnList icons={socialIcons} />
+    <SocialBtnList icons={socialIcons} hoverColor={'accent'} />
     <p>Copyright &copy; 2022 - FinanceLedge</p>
    </Container>
   </StyledFooter>

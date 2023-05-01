@@ -11,16 +11,16 @@ export const StyledHeader = styled.header<HeaderProps>`
  z-index: 100;
  transition: all ${({ theme }) => theme.cubic};
  background: transparent;
- padding: 22px 0;
+ display: grid;
+ align-items: center;
+ height: 120px;
 
  &.active {
-  background: ${({ theme }) => theme.colors.text};
+  background: ${({ theme }) => theme.colors.footer};
  }
+
  @media ${({ theme }) => theme.device.tablet} {
-  padding: 23px 0;
- }
- @media ${({ theme }) => theme.device.desktop} {
-  padding: 32px 0;
+  height: 70px;
  }
 `;
 
