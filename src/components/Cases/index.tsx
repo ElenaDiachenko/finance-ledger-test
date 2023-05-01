@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import Lightbox, { ControllerRef, CaptionsRef } from 'yet-another-react-lightbox';
+import Lightbox, { ControllerRef} from 'yet-another-react-lightbox';
 import Captions from 'yet-another-react-lightbox/plugins/captions';
 
 import 'yet-another-react-lightbox/styles.css';
@@ -16,7 +16,6 @@ const Cases = () => {
  const [index, setIndex] = useState(-1);
  const [open, setOpen] = useState(false);
  const ref = useRef<ControllerRef>(null);
- const captionsRef = useRef<CaptionsRef>(null);
 
  const prevIcon = () => (
   <StyledPrev>
@@ -51,14 +50,13 @@ const Cases = () => {
      on={{
       click: () => {
        ref.current?.close();
-       //    (captionsRef.current?.visible ? captionsRef.current?.hide : captionsRef.current?.show)?.();
       },
      }}
      slides={slides}
      open={open}
      index={index}
      close={() => setOpen(false)}
-     captions={{ descriptionTextAlign: 'center', descriptionMaxLines: 1, ref: captionsRef }}
+     captions={{ descriptionTextAlign: 'center', descriptionMaxLines: 1 }}
      styles={{
       container: {
        backgroundColor: 'rgba(0, 0, 0, .7)',

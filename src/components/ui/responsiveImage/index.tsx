@@ -20,7 +20,7 @@ const ResponsiveImage: FC<ResponsiveImageProps> = ({
  handleLitebox,
 }) => {
  const handleClick = () => {
-  if (idx && handleLitebox && window.innerWidth > 1024) {
+  if (idx && handleLitebox && window.innerWidth > 767) {
    handleLitebox(idx);
   }
  };

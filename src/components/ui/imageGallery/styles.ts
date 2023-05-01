@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledGallery = styled.div`
+export const StyledGallery = styled.ul`
  display: grid;
  grid-gap: 8px;
 
@@ -9,5 +9,13 @@ export const StyledGallery = styled.div`
 
  @media ${({ theme }) => theme.device.tablet} {
   grid-gap: 18px;
+ }
+`;
+
+export const Item = styled.li`
+ @media ${({ theme }) => theme.device.tablet} {
+  & :hover {
+   cursor: pointer;
+  }
  }
 `;
