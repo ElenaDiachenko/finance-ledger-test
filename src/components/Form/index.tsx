@@ -3,8 +3,9 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { Button, Icon } from 'components/ui';
 import { ErrorWrapper, Input, InputWrapper, Label, Placeholder, Span, StyledForm } from './styles';
 import { validationSchema } from 'utils';
+import { sendForm } from 'services';
 
-type UserInput = {
+export type UserInput = {
  name: string;
  email: string;
 };
@@ -18,6 +19,7 @@ const Form = () => {
  } = useForm<UserInput>({ mode: 'onTouched', resolver: yupResolver(validationSchema) });
 
  const handlerSubmit = (credentials: UserInput) => {
+  sendForm(credentials);
   console.table(credentials);
   reset();
  };
