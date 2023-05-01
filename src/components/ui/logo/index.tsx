@@ -1,4 +1,3 @@
-import sprite from 'assets/images/sprite.svg';
 import { LogoBox, Span } from './styles';
 import { Icon } from 'components/ui';
 
